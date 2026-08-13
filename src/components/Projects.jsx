@@ -6,65 +6,30 @@ import { Carousel } from "react-bootstrap";
 import ExternalLinks from "./ExternalLinks";
 
 const spotlightProjects = {
-  Blob: {
-    title: "blob",
-    desc: "A Portal 2-inspired 3D puzzle platformer with a split mechanic built in Unity",
+  Pos: {
+    title: "Twistello — Stall POS",
+    desc: "A Point of Sale system for a food stall, handling menu items, add-ons, order tickets, and totals.",
     techStack: "C# (UNITY)",
-    link: "https://github.com/gazijarin/Blob",
-    image: "/assets/blob.png",
+    link: "https://github.com/sukjayramesh-code/Point-of-sale-",
+    open: "https://sukjayramesh-code.github.io/Point-of-sale-/",
+    image: "/assets/pos.png",
   },
-  "No Man's Land": {
-    title: "no man's land",
-    desc: "A third-person survival-mode game where you battle against time and space to return to Earth.",
-    techStack: "C# (UNITY)",
-    link: "https://github.com/slakh96/no-mans-land",
-    open: "https://gazijarin.itch.io/no-mans-land",
-    image: "/assets/nomansland.png",
+  Jarvis: {
+    title: "J.A.R.V.I.S",
+    desc: "A Discord bot that responds to user commands and simulated AI-style queries.",
+    techStack: "JavaScript (Discord.js)",
+    link: "https://github.com/sukjayramesh-code/J.A.R.V.I.S",
+    open: "https://github.com/sukjayramesh-code/J.A.R.V.I.S",
+    image: "/assets/jarvis.png",
   },
-  "Tall Tales": {
-    title: "tall tales",
-    desc: "A multi-player story-telling web game for 3-5 players. Its usage of sockets to allow for concurrent gameplay, connecting friends across the internet.",
-    techStack: "NODE.JS (SOCKET.IO), REACT.JS, MONGODB",
-    link: "https://github.com/gazijarin/TallTales",
-    open: "https://talltales.herokuapp.com/",
-    image: "/assets/talltales.png",
+  Srikandi: {
+    title: "Srikandi Guard",
+    desc: "A women's safety mobile app (FYP, in progress) with live GPS location sharing and an SOS alert system.",
+    techStack: "Mobile App Dev",
+    link: "https://github.com/sukjayramesh-code/Srikandi-Guard-V1",
+    open: "https://github.com/sukjayramesh-code/Srikandi-Guard-V1",
+    image: "/assets/srikandi.png",
   },
-  Portfolio: {
-    title: "portfolio.js",
-    desc: "A small JS library that helps with clear and succinct data presentation.",
-    techStack: "NODE.JS (EXPRESS.JS)",
-    link: "https://github.com/gazijarin/Portfolio.js",
-    open: "https://afternoon-ocean-92382.herokuapp.com/",
-    image: "/assets/portfolio.png",
-  },
-};
-
-const projects = {
-  "Gazi-V2 Portfolio": {
-    desc: "This is the second iteration of my portfolio, designed and rebuilt from the ground up using React and Vite. The previous version, now deprecated, earned 288+ stars on GitHub.",
-    techStack: "React.js, Vite, Bootstrap",
-    link: "https://github.com/gazijarin/Gazi-V2",
-    open: "https://gazijarin.com/",
-  },
-  "TDSB Homework Management Interface": {
-    desc: "An application created for Toronto District School Board, with a Flask back-end and a Vue front-end.",
-    techStack: "Python (Flask), Vue.js, Bootstrap, SQL",
-    link: "https://github.com/gazijarin/TDSBHomeworkManagement",
-    open: "https://tdsb-app.herokuapp.com/",
-  },
-  "Adam A.I.": {
-    desc: "A self-learning A.I. that learns to traverse through a complex maze using the genetic algorithm.",
-    techStack: "Javascript, HTML / CSS",
-    link: "https://github.com/gazijarin/adamai",
-    open: "https://gazijarin.github.io/AdamAI/",
-  },
-  /*
-  "Distributed Logging and Monitoring System": {
-    desc: "A system that establishes an ORM connection to a Prisma client in order to communicate logs from microservices.",
-    techStack: "Node.js (Express.js), React.js, PostgreSQL",
-    link: "https://github.com/gazijarin/Distributed-Logging-and-Monitoring-System",
-  },
-  */
 };
 
 const Projects = () => {
@@ -73,7 +38,7 @@ const Projects = () => {
       <div className="section-header ">
         <span className="section-title">/ software</span>
         <a
-          href="https://github.com/gazijarin"
+          href="https://github.com/sukjayramesh-code"
           className="explore-link"
           target="_blank"
           rel="noopener noreferrer"
@@ -144,31 +109,8 @@ const Projects = () => {
           </FadeInSection>
         ))}
       </div>
-      <div className="project-container">
-        <ul className="projects-grid">
-          {Object.keys(projects).map((key, i) => (
-            <FadeInSection key={i} delay={(i + 1) * 100 + "ms"}>
-              <li className="projects-card">
-                <div className="card-header">
-                  <div className="folder-icon">
-                    <FolderOpenRoundedIcon sx={{ fontSize: 35 }} />
-                  </div>
-                  <ExternalLinks
-                    githubLink={projects[key]["link"]}
-                    openLink={projects[key]["open"]}
-                  />
-                </div>
-
-                <div className="card-title">{key}</div>
-                <div className="card-desc">{projects[key]["desc"]}</div>
-                <div className="card-tech">{projects[key]["techStack"]}</div>
-              </li>
-            </FadeInSection>
-          ))}
-        </ul>
-      </div>
     </div>
   );
 };
 
-export default Projects;
+export default Projects;0

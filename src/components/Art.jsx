@@ -3,14 +3,22 @@ import "../styles/Art.css";
 import FadeInSection from "./FadeInSection";
 import { Link } from "react-router-dom";
 
+// Importing your Top 6 highlight images
+import joker from "../assets/art/Joker.png";
+import magneto from "../assets/art/Magneto.png";
+import hellboy from "../assets/art/Hellboy.png";
+import ghostRider from "../assets/art/GhostRider.png";
+import twoFace from "../assets/art/TwoFace.png";
+import lobo from "../assets/art/Lobo.png";
+
 const Art = () => {
   const topArt = [
-    { src: "/assets/art/fishy.jpg", title: "fish" },
-    { src: "/assets/art/dali.jpg", title: "dali" },
-    { src: "/assets/art/japan.jpg", title: "japan" },
-    { src: "/assets/art/space.jpg", title: "space" },
-    { src: "/assets/art/11th_grade.jpg", title: "11th grade" },
-    { src: "/assets/art/cordyceps.jpg", title: "cordyceps" }
+    { src: joker, title: "The Joker" },
+    { src: magneto, title: "Magneto" },
+    { src: hellboy, title: "Hellboy" },
+    { src: ghostRider, title: "Ghost Rider" },
+    { src: twoFace, title: "Two-Face" },
+    { src: lobo, title: "Lobo" }
   ];
 
   return (

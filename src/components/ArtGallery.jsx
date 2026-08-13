@@ -4,25 +4,21 @@ import FadeInSection from "./FadeInSection";
 import { Link } from "react-router-dom";
 import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
 
+import joker from "../assets/art/Joker.png";
+import magneto from "../assets/art/Magneto.png";
+import hellboy from "../assets/art/Hellboy.png";
+import ghostRider from "../assets/art/GhostRider.png";
+import twoFace from "../assets/art/TwoFace.png";
+import lobo from "../assets/art/Lobo.png";
+
 const ArtGallery = () => {
   const allArt = [
-    { src: "/assets/art/11th_grade.jpg", title: "11th grade" },
-    { src: "/assets/art/anatomy.jpg", title: "anatomy" },
-    { src: "/assets/art/animal.jpg", title: "animal" },
-    { src: "/assets/art/cordyceps.jpg", title: "cordyceps" },
-    { src: "/assets/art/dali.jpg", title: "dali" },
-    { src: "/assets/art/dna.jpg", title: "dna" },
-    { src: "/assets/art/elephant.jpg", title: "elephant" },
-    { src: "/assets/art/fetus.jpg", title: "fetus" },
-    { src: "/assets/art/fishy.jpg", title: "fish" },
-    { src: "/assets/art/hands.jpg", title: "hands" },
-    { src: "/assets/art/japan.jpg", title: "japan" },
-    { src: "/assets/art/monolith.jpg", title: "monolith" },
-    { src: "/assets/art/narcissus.jpg", title: "narcissus" },
-    { src: "/assets/art/recursion.jpg", title: "recursion" },
-    { src: "/assets/art/sachiel.jpg", title: "sachiel" },
-    { src: "/assets/art/shoelaces.jpg", title: "shoelaces" },
-    { src: "/assets/art/space.jpg", title: "space" }
+    { src: joker, title: "The Joker" },
+    { src: magneto, title: "Magneto" },
+    { src: hellboy, title: "Hellboy" },
+    { src: ghostRider, title: "Ghost Rider" },
+    { src: twoFace, title: "Two-Face" },
+    { src: lobo, title: "Lobo" }
   ];
 
   return (

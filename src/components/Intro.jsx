@@ -16,7 +16,7 @@ const Intro = () => {
           {"hi, "}
           <span className="intro-name">
             <TypeAnimation
-              sequence={["gazi"]}
+              sequence={["shukran"]}
               wrapper="span"
               cursor={false}
               repeat={0}
@@ -27,11 +27,9 @@ const Intro = () => {
         </div>
         <FadeInSection>
           <div className="intro-desc">
-            Software engineer and artist in New York City. I build ML models at
-            Google by day and make strange little projects at the intersection
-            of tech and art by night. Occasionally both happen at the same time.
+            Full-stack developer and graphic designer in Malaysia. I build web and mobile applications by day and create multimedia designs with the Adobe Creative Suite by night. Occasionally both happen at the same time.
           </div>
-          <a href="mailto:gazijarin@gmail.com" className="intro-contact">
+          <a href="mailto:your-email@example.com" className="intro-contact">
             <EmailRoundedIcon />
             {" Say hi!"}
           </a>
