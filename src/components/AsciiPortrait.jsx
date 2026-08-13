@@ -96,7 +96,7 @@ const AsciiPortrait = () => {
           const b = pixels[i + 2];
           const brightness = (r + g + b) / (3 * 255);
           const charIndex = Math.floor(brightness * (chars.length - 1));
-          
+
           rawParticles.push({
             x: Number(x.toFixed(1)),
             y: Number(y.toFixed(1)),
@@ -111,7 +111,7 @@ const AsciiPortrait = () => {
 
   useEffect(() => {
     const isMobileSize = size <= 280;
-    
+
     // 1. Check pre-calculated static data
     if (asciiData[size]) {
       particlesRef.current = createParticlesFromRaw(asciiData[size], isMobileSize);
@@ -131,7 +131,7 @@ const AsciiPortrait = () => {
     // 3. Fallback to image processing
     const img = new Image();
     img.crossOrigin = "Anonymous";
-    img.src = "/profile.png";
+    img.src = import.meta.env.BASE_URL + "profile.png";
     img.onload = () => {
       const raw = processImage(img, size);
       memoryCache[size] = raw;
@@ -147,7 +147,7 @@ const AsciiPortrait = () => {
 
     const ctx = canvas.getContext("2d");
     const dpr = window.devicePixelRatio || 1;
-    
+
     canvas.width = size * dpr;
     canvas.height = size * dpr;
     ctx.scale(dpr, dpr);
@@ -181,7 +181,7 @@ const AsciiPortrait = () => {
 
         const fadeProgress = Math.min(particleTime / 1.5, 1);
         const easedFade = 1 - Math.pow(1 - fadeProgress, 2);
-        
+
         const isActive = mouse.active || particleTime < 3.0;
         const shimmerVal = isActive ? Math.sin(elapsed * 2 + p.shimmer) * 0.1 : 0;
         p.currentAlpha = Math.max(0, p.baseAlpha * easedFade + shimmerVal);
@@ -220,7 +220,7 @@ const AsciiPortrait = () => {
           // Rapidly settle when inactive
           p.vx *= 0.85;
           p.vy *= 0.85;
-          
+
           if (particleTime > 4.0 && Math.abs(dx) < 0.01 && Math.abs(dy) < 0.01) {
             p.x = p.targetX;
             p.y = p.targetY;

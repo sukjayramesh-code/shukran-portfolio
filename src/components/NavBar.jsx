@@ -36,15 +36,15 @@ const NavBar = () => {
       onToggle={(isExpanded) => setExpanded(isExpanded)}
     >
       <Container>
-        <Navbar.Brand href="/">Shukran</Navbar.Brand>
+        <Navbar.Brand href="#intro">Shukran</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" onSelect={() => setExpanded(false)}>
-            <Nav.Link href="/#intro">Home</Nav.Link>
-            <Nav.Link href="/#about">About</Nav.Link>
-            <Nav.Link href="/#experience">Experience</Nav.Link>
-            <Nav.Link href="/#projects">Software</Nav.Link>
-            <Nav.Link href="/#art">Art</Nav.Link>
+            <Nav.Link href="#intro">Home</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#experience">Experience</Nav.Link>
+            <Nav.Link href="#projects">Software</Nav.Link>
+            <Nav.Link href="#art">Art</Nav.Link>
           </Nav>
           <Nav className="ms-auto" onSelect={() => setExpanded(false)}>
             <Nav.Link href="mailto:sukjayramesh@gmail.com">

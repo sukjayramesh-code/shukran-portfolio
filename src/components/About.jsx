@@ -10,7 +10,7 @@ const About = () => {
       <a href="https://www.mcdonalds.com.my/">McDonald's</a> and am looking forward to starting my software development internship later in 2026.
     </p>
   );
-  
+
   const two = (
     <p>
       In my free time, I love hunting down rare Image, DC, and Marvel comics, tinkering with the technical specs of my Perodua Myvi Gen 3, and listening to music.
@@ -46,7 +46,7 @@ const About = () => {
             {two}
           </div>
           <div className="about-image">
-            <img alt="Shukran" src="/assets/me2.jpg" />
+            <img alt="Shukran" src={import.meta.env.BASE_URL + "assets/me2.jpg"} />
           </div>
         </div>
       </FadeInSection>

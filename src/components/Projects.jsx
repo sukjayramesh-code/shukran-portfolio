@@ -5,6 +5,8 @@ import FadeInSection from "./FadeInSection";
 import { Carousel } from "react-bootstrap";
 import ExternalLinks from "./ExternalLinks";
 
+const base = import.meta.env.BASE_URL;
+
 const spotlightProjects = {
   Pos: {
     title: "Twistello — Stall POS",
@@ -12,7 +14,7 @@ const spotlightProjects = {
     techStack: "C# (UNITY)",
     link: "https://github.com/sukjayramesh-code/Point-of-sale-",
     open: "https://sukjayramesh-code.github.io/Point-of-sale-/",
-    image: "/assets/pos.png",
+    image: base + "assets/pos.png",
   },
   Jarvis: {
     title: "J.A.R.V.I.S",
@@ -20,7 +22,7 @@ const spotlightProjects = {
     techStack: "JavaScript (Discord.js)",
     link: "https://github.com/sukjayramesh-code/J.A.R.V.I.S",
     open: "https://github.com/sukjayramesh-code/J.A.R.V.I.S",
-    image: "/assets/jarvis.png",
+    image: base + "assets/jarvis.png",
   },
   Srikandi: {
     title: "Srikandi Guard",
@@ -28,7 +30,7 @@ const spotlightProjects = {
     techStack: "Mobile App Dev",
     link: "https://github.com/sukjayramesh-code/Srikandi-Guard-V1",
     open: "https://github.com/sukjayramesh-code/Srikandi-Guard-V1",
-    image: "/assets/srikandi.png",
+    image: base + "assets/srikandi.png",
   },
 };
 
@@ -113,4 +115,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;0
+export default Projects;
