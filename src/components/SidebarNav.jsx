@@ -13,7 +13,8 @@ const SidebarNav = () => {
     <a key="3" href="/#experience"><span className="nav-slash">/</span>experience</a>,
     <a key="4" href="/#projects"><span className="nav-slash">/</span>software</a>,
     <a key="5" href="/#hardware-projects"><span className="nav-slash">/</span>hardware</a>,
-    <a key="6" href="/#art"><span className="nav-slash">/</span>art</a>
+    <a key="6" href="/#achievements"><span className="nav-slash">/</span>achievements</a>,
+    <a key="7" href="/#art"><span className="nav-slash">/</span>art</a>
   ];
 
   return (

@@ -3,6 +3,7 @@ import Intro from "./components/Intro";
 import Experience from "./components/Experience";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Achievements from "./components/Achievements";
 import Art from "./components/Art";
 import ArtGallery from "./components/ArtGallery";
 import Credits from "./components/Credits";
@@ -78,6 +79,7 @@ function App() {
                 <About />
                 <Experience />
                 <Projects />
+                <Achievements />
                 <Art />
                 <Credits />
               </>
